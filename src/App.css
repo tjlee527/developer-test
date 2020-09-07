@@ -1,0 +1,62 @@
+.App {
+  margin: auto;
+  width: 50%;
+  text-align: center;
+  background-color: #f4bfcb;
+  width: 400px;
+  height: 540px;
+  border: 2px solid gray;
+  border-radius: 5px;
+  margin-top: 30px;
+  box-shadow: 3px 0px 10px 3px grey;
+}
+
+h1 {
+  padding-top: 20px;
+  font-size: 22px;
+}
+
+.form {
+  width: 400px;
+  margin: auto;
+  /* width: 50%; */
+}
+
+.list {
+  text-align: left;
+  height: 250px;
+  border: 1px solid black;
+  margin: auto;
+  width: 70%;
+  background-color: white;
+}
+
+input[type=text] {
+  width: 70%;
+  padding: 12px 12px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border-radius: 5px;
+  border: 1px solid gray;
+}
+
+input[type=submit] {
+  border-radius: 5px;
+  font-weight: bold;
+  background-color: #92ec94;
+  color: black;
+  padding: 16px 32px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border: 1px solid gray;
+
+}
+
+#add {
+  width: 30%;
+}
+
+#submit {
+  width: 70%;
+}
+

@@ -1,6 +1,7 @@
 import React from 'react';
 import {connect} from 'react-redux';
 import {addItem, deleteItem, resetState} from './redux/actions'; //added reset state action for resubmitting
+import './App.css';
 
 class App extends React.Component {
   constructor(props) {
@@ -43,30 +44,30 @@ class App extends React.Component {
 
   render() {
     let { wishList } = this.props;
+
     return (
-      <div id='app'>
+      <div className='App'>
         <h1>MY WISHLIST</h1>
-        <div id='list'>
+        <div className='list'>
           {wishList.length ?
             wishList.map((item, i) => (
-            <li onClick={() => this.handleItemClick(item)} key={i}>{item}</li>
+            <ul onClick={() => this.handleItemClick(item)} key={i}>{item}</ul>
             ))
             : null
           }
         </div>
-        <div id='form'>
+        <div className='form'>
           <form onSubmit={this.handleAddClick}>
             <input
+              id='text-input'
               type='text'
               name='item'
               onChange={this.handleInputChange}
               value={this.state.input}/>
-            <input type='submit' value='Add'/>
+            <input id='add' type='submit' value='Add'/>
           </form>
-        </div>
-        <div id='submit'>
           <form onSubmit={this.handleSubmitList}>
-            <input type='submit' value='Submit'/>
+            <input id='submit' type='submit' value='Submit'/>
           </form>
         </div>
       </div>
